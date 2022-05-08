@@ -18,7 +18,7 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://http://localhost:3001/', {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: true
 });
 
 // routes
